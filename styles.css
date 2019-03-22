@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+body{
+    font-size: 1.2em;
+    width: 100%;
+    margin: 0 auto;
+    letter-spacing: 0.5px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+h1{
+    text-align: center;
+}
+
+#container {
+    padding: 1.5em;
+    background: linear-gradient(-45deg, rgb(255, 255, 255), rgb(116, 116, 116));
+    border-radius: 10px;
+
+}
+
+div{
+    line-height: 2.5em;
+}
+
+input[type="text"]{
+    font-size: 1.1em;
+    text-align: center;
+}
+
+label, input {
+    width: 100%;
+}
+
+@media(min-width: 700px){
+    body{
+        font-family: 'Open Sans', sans-serif;
+        width: 60%;
+        margin-top: 20px;
+        background: linear-gradient(231deg, #0054ff, #6b00ff, #979ce6);
+        background-size: 600% 600%;
+        -webkit-animation: gradientBack 30s ease infinite;
+        -moz-animation: gradientBack 30s ease infinite;
+        -o-animation: gradientBack 30s ease infinite;
+        animation: gradientBack 30s ease infinite;
+        
+        @-webkit-keyframes gradientBack {
+            0%{background-position:0% 88%}
+            50%{background-position:100% 13%}
+            100%{background-position:0% 88%}
+        }
+        @-moz-keyframes gradientBack {
+            0%{background-position:0% 88%}
+            50%{background-position:100% 13%}
+            100%{background-position:0% 88%}
+        }
+        @-o-keyframes gradientBack {
+            0%{background-position:0% 88%}
+            50%{background-position:100% 13%}
+            100%{background-position:0% 88%}
+        }
+        @keyframes gradientBack { 
+            0%{background-position:0% 88%}
+            50%{background-position:100% 13%}
+            100%{background-position:0% 88%}
+        }
+    }
+    #container{
+        opacity: 0.9;
+    }
+    label, input {
+        display: inline-block;
+        width: 40%;
+    }
+    div{
+        line-height: 4em;
+    }
+}
